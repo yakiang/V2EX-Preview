@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "V2EX-Preview",
+  "description": "An extention to preview V2EX topics",
+  "version": "0.1.0",
+
+  "permissions": [
+    "*://*.v2ex.com/",
+    "*://v2ex.com/"
+  ],
+  
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.v2ex.com/*",
+        "*://v2ex.com/*"
+      ],
+      "css": [
+        "css/main.css"
+      ],
+      "js": [
+        "js/jquery.js",
+        "js/main.js",
+        "js/dim.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

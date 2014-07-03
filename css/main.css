@@ -1,0 +1,22 @@
+a#preview_btn:hover {
+  text-decoration: none;
+}
+
+#preview_box {
+  position: fixed;
+  overflow: scroll;
+  display: none;
+  top: 20%;
+  left: 30%;
+  height: 50%;
+  width: 40%;
+  padding: 20px;
+}
+
+.action {
+  float: right;
+}
+
+#goto, #gotoN, #close {
+  margin: 7px;
+}
